@@ -1,6 +1,7 @@
 // Частковий ресет
 body {
   font-family: var(--main-font);
+  line-height: var(--lh-base);
   color: var(--main-txt-cl);
   user-select: none;
 }

@@ -1,0 +1,16 @@
+.btn {
+  letter-spacing: 0.06em;
+  color: var(--white-txt-cl);
+  background-color: #000000;
+  border-radius: 13px;
+  border: transparent;
+  padding-top: 11px;
+  padding-right: 20px;
+  padding-bottom: 11px;
+  padding-left: 20px;
+
+  &--transparent {
+    color: var(--title-txt-cl);
+    background-color: transparent;
+  }
+}
