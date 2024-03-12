@@ -2,6 +2,10 @@
 @import './base/reset';
 @import './base/variables';
 
+@import './utils/mixins';
+
 @import './components/container';
+@import './components/logo';
 @import './components/btn';
 @import './components/header';
+@import './components/nav';

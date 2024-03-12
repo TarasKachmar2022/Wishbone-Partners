@@ -1,0 +1,28 @@
+@mixin section($pt: 100px, $pb: 100px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+@mixin retinax2 {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+@mixin retinax3 {
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    @content;
+  }
+}
+
+@mixin retinax4 {
+  @media (min-device-pixel-ratio: 4),
+    (min-resolution: 384dpi),
+    (min-resolution: 4dppx) {
+    @content;
+  }
+}
