@@ -2,10 +2,10 @@
   "name": "wishbone-partners",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://TarasKachmar2022.github.io/WishbonePartners",
+  "homepage": "https://github.io/TarasKachmar2022/WishbonePartners",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /WishbonePartners/"
   },
   "repository": {
     "type": "git",
