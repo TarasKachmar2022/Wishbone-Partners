@@ -3,7 +3,7 @@
     calc(30.44px + (137 - 30.44) * ((100vw - 320px) / (1440 - 320))),
     calc(26px + (117 - 26) * ((100vw - 320px) / (1440 - 320)))
   );
-
+  font-size: calc(3.56px + (16 - 3.56) * ((100vw - 320px) / (1440 - 320)));
   background-color: var(--background-hero-cl);
   background-position: right;
   background-size: calc(160px + (720 - 160) * ((100vw - 320px) / (1440 - 320)));
@@ -28,17 +28,17 @@
 
 .hero__uppertitle {
   @extend %uppertitle;
-  margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
+  margin-bottom: calc(4.44px + (20 - 4.44) * ((100vw - 320px) / (1440 - 320)));
 }
 
 .hero__title {
   @extend %maintitle;
-  max-width: calc(93px + (417 - 93) * ((100vw - 320px) / (1440 - 320)));
+  max-width: calc(92.67px + (417 - 92.67) * ((100vw - 320px) / (1440 - 320)));
   margin-bottom: calc(4px + (18 - 4) * ((100vw - 320px) / (1440 - 320)));
 }
 
 .hero__descr {
   font-size: calc(3.56px + (16 - 3.56) * ((100vw - 320px) / (1440 - 320)));
-  max-width: calc(113px + (509 - 113) * ((100vw - 320px) / (1440 - 320)));
-  margin-bottom: calc(7px + (30 - 7) * ((100vw - 320px) / (1440 - 320)));
+  max-width: calc(113.11px + (509 - 113.11) * ((100vw - 320px) / (1440 - 320)));
+  margin-bottom: calc(6.67px + (30 - 6.67) * ((100vw - 320px) / (1440 - 320)));
 }
