@@ -1,5 +1,5 @@
 .logo {
-  font-size: 19px;
+  font-size: calc(4.89px + (22 - 4.89) * ((100vw - 320px) / (1440 - 320)));
   font-weight: 500;
   letter-spacing: -0.07em;
 }

@@ -5,5 +5,12 @@
 
 .site-nav__list {
   display: flex;
-  gap: 32px;
+  gap: calc(7px + (32 - 7) * ((100vw - 320px) / (1440 - 320)));
+}
+
+.site-nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(3.56px + (16 - 3.56) * ((100vw - 320px) / (1440 - 320)));
 }

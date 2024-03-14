@@ -1,0 +1,15 @@
+%uppertitle {
+  font-size: calc(3px + (14 - 3) * ((100vw - 320px) / (1440 - 320)));
+  line-height: 1.43;
+  letter-spacing: 0.06em;
+  color: var(--secondary-txt-cl);
+
+  text-transform: uppercase;
+}
+
+%maintitle {
+  font-weight: 400;
+  font-size: calc(14px + (64 - 14) * ((100vw - 320px) / (1440 - 320)));
+  line-height: 1.1;
+  color: var(--title-txt-cl);
+}

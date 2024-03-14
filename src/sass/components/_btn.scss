@@ -1,13 +1,14 @@
 .btn {
+  font-size: calc(3.56px + (16 - 3.56) * ((100vw - 320px) / (1440 - 320)));
   letter-spacing: 0.06em;
   color: var(--white-txt-cl);
   background-color: #000000;
-  border-radius: 13px;
+  border-radius: calc(2.89px + (13 - 2.89) * ((100vw - 320px) / (1440 - 320)));
   border: transparent;
-  padding-top: 11px;
-  padding-right: 20px;
-  padding-bottom: 11px;
-  padding-left: 20px;
+  padding-top: calc(2.44px + (11 - 2.44) * ((100vw - 320px) / (1440 - 320)));
+  padding-right: calc(4.44px + (20 - 4.44) * ((100vw - 320px) / (1440 - 320)));
+  padding-bottom: calc(2.44px + (11 - 2.44) * ((100vw - 320px) / (1440 - 320)));
+  padding-left: calc(4.44px + (20 - 4.44) * ((100vw - 320px) / (1440 - 320)));
 
   &--transparent {
     color: var(--title-txt-cl);

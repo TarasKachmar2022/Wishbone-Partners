@@ -1,6 +1,10 @@
 .container {
-  padding-right: 136px;
-  padding-left: 136px;
+  padding-right: calc(
+    30.22px + (136 - 30.22) * ((100vw - 320px) / (1440 - 320))
+  );
+  padding-left: calc(
+    30.22px + (136 - 30.22) * ((100vw - 320px) / (1440 - 320))
+  );
   margin-right: auto;
   margin-left: auto;
 

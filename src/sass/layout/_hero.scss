@@ -1,0 +1,44 @@
+.hero {
+  @include section(
+    calc(30.44px + (137 - 30.44) * ((100vw - 320px) / (1440 - 320))),
+    calc(26px + (117 - 26) * ((100vw - 320px) / (1440 - 320)))
+  );
+
+  background-color: var(--background-hero-cl);
+  background-position: right;
+  background-size: calc(160px + (720 - 160) * ((100vw - 320px) / (1440 - 320)));
+  background-repeat: no-repeat;
+
+  // mobile screen
+  background-image: url('../images/hero/hero.jpg');
+  background-image: -webkit-image-set(url('../images/hero/hero.webp') 1x);
+  @include retinax2 {
+    background-image: url('../images/hero/hero@2x.jpg');
+    background-image: -webkit-image-set(url('../images/hero/hero@2x.webp') 2x);
+  }
+  @include retinax3 {
+    background-image: url('../images/hero/hero@3x.jpg');
+    background-image: -webkit-image-set(url('../images/hero/hero@3x.webp') 3x);
+  }
+  @include retinax4 {
+    background-image: url('../images/hero/hero@4x.jpg');
+    background-image: -webkit-image-set(url('../images/hero/hero@4x.webp') 4x);
+  }
+}
+
+.hero__uppertitle {
+  @extend %uppertitle;
+  margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1440 - 320)));
+}
+
+.hero__title {
+  @extend %maintitle;
+  max-width: calc(93px + (417 - 93) * ((100vw - 320px) / (1440 - 320)));
+  margin-bottom: calc(4px + (18 - 4) * ((100vw - 320px) / (1440 - 320)));
+}
+
+.hero__descr {
+  font-size: calc(3.56px + (16 - 3.56) * ((100vw - 320px) / (1440 - 320)));
+  max-width: calc(113px + (509 - 113) * ((100vw - 320px) / (1440 - 320)));
+  margin-bottom: calc(7px + (30 - 7) * ((100vw - 320px) / (1440 - 320)));
+}
