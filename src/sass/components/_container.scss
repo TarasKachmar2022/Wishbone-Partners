@@ -1,12 +1,25 @@
 .container {
-  padding-right: calc(
-    30.22px + (136 - 30.22) * ((100vw - 320px) / (1440 - 320))
-  );
-  padding-left: calc(
-    30.22px + (136 - 30.22) * ((100vw - 320px) / (1440 - 320))
-  );
+  // @include responsive(padding-left, 136, 8, max);
   margin-right: auto;
   margin-left: auto;
 
-  max-width: 1440px;
+  @media screen and (min-width: 769px) and (max-width: 1440px) {
+    padding-right: calc(
+      72.63px + (136 - 72.63) * ((100vw - 769px) / (1440 - 769))
+    );
+    padding-left: calc(
+      72.63px + (136 - 72.63) * ((100vw - 769px) / (1440 - 769))
+    );
+    max-width: 1440px;
+  }
+
+  @media screen and (min-width: 1441px) {
+    padding-right: calc(
+      136px + (181 - 136) * ((100vw - 1440px) / (1920 - 1440))
+    );
+    padding-left: calc(
+      136px + (181 - 136) * ((100vw - 1440px) / (1920 - 1440))
+    );
+    max-width: 1920px;
+  }
 }
