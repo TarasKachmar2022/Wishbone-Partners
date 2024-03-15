@@ -1,7 +1,8 @@
 .logo {
-  font-size: calc(4.89px + (22 - 4.89) * ((100vw - 320px) / (1440 - 320)));
+  font-size: calc(20px + (22 - 20) * ((100vw - 768px) / (1440 - 768)));
   font-weight: 500;
   letter-spacing: -0.07em;
+  margin-right: 10px;
 }
 
 .logo__bold-text {

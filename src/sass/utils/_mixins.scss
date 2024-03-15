@@ -3,6 +3,20 @@
   padding-bottom: $pb;
 }
 
+@mixin responsive-max($minSize, $maxSize, $property, $startValue, $minValue) {
+  $property: calc(
+    $minValue + ($startValue - $minValue) *
+      ((100vw - #{$minSize}) / ($maxSize - $minSize))
+  );
+}
+
+@mixin responsive-min($minSize, $maxSize, $property, $startValue, $maxValue) {
+  $property: calc(
+    $startValue + ($maxValue - $startValue) *
+      ((100vw - #{$minSize}) / ($maxSize - $minSize))
+  );
+}
+
 @mixin retinax2 {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
