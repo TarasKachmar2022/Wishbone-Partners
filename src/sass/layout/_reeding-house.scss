@@ -11,26 +11,26 @@
 
   // desktop screen
   background-image: url('../images/reeding-house/reeding-house-bg-img_d.jpg');
-  // background-image: -webkit-image-set(
-  //   url('../images/hero/hero-bg-img_m.webp') 1x
-  // );
+  background-image: -webkit-image-set(
+    url('../images/reeding-house/reeding-house-bg-img_d.webp') 1x
+  );
   @include retinax2 {
     background-image: url('../images/reeding-house/reeding-house-bg-img@2x_d.jpg');
-    // background-image: -webkit-image-set(
-    //   url('../images/hero/hero-bg-img@2x_m.webp') 2x
-    // );
+    background-image: -webkit-image-set(
+      url('../images/reeding-house/reeding-house-bg-img@2x_d.webp') 2x
+    );
   }
   @include retinax3 {
     background-image: url('../images/reeding-house/reeding-house-bg-img@3x_d.jpg');
-    // background-image: -webkit-image-set(
-    //   url('../images/hero/hero-bg-img@3x_m.webp') 3x
-    // );
+    background-image: -webkit-image-set(
+      url('../images/reeding-house/reeding-house-bg-img@3x_d.webp') 3x
+    );
   }
   @include retinax4 {
     background-image: url('../images/reeding-house/reeding-house-bg-img@4x_d.jpg');
-    // background-image: -webkit-image-set(
-    //   url('../images/hero/hero-bg-img@4x_m.webp') 4x
-    // );
+    background-image: -webkit-image-set(
+      url('../images/reeding-house/reeding-house-bg-img@4x_d.webp') 4x
+    );
   }
 }
 
