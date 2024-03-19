@@ -1,0 +1,53 @@
+.reeding-house {
+  @include section(266, 266);
+  background-color: var(--background-section-cl);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  max-height: 600px;
+  margin: 0 auto;
+  position: relative;
+
+  // desktop screen
+  background-image: url('../images/reeding-house/reeding-house-bg-img_d.jpg');
+  // background-image: -webkit-image-set(
+  //   url('../images/hero/hero-bg-img_m.webp') 1x
+  // );
+  @include retinax2 {
+    background-image: url('../images/reeding-house/reeding-house-bg-img@2x_d.jpg');
+    // background-image: -webkit-image-set(
+    //   url('../images/hero/hero-bg-img@2x_m.webp') 2x
+    // );
+  }
+  @include retinax3 {
+    background-image: url('../images/reeding-house/reeding-house-bg-img@3x_d.jpg');
+    // background-image: -webkit-image-set(
+    //   url('../images/hero/hero-bg-img@3x_m.webp') 3x
+    // );
+  }
+  @include retinax4 {
+    background-image: url('../images/reeding-house/reeding-house-bg-img@4x_d.jpg');
+    // background-image: -webkit-image-set(
+    //   url('../images/hero/hero-bg-img@4x_m.webp') 4x
+    // );
+  }
+}
+
+.reeding-house__wrap {
+  position: absolute;
+  top: 50%;
+  right: 75px;
+}
+
+.reeding-house__title {
+  @extend %uppertitle;
+  font-weight: 400;
+  color: var(--main-txt-cl);
+}
+
+.reeding-house__descr {
+  @extend %descr;
+  color: var(--secondary-txt-cl);
+  max-width: 285px;
+}

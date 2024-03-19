@@ -27,11 +27,15 @@
 }
 
 %descr {
-  @media screen and (min-width: 769px) and (max-width: 1440px) {
+  @media screen and (min-width: 768px) {
     font-size: calc(8.54px + (16 - 8.54) * ((100vw - 769px) / (1440 - 769)));
   }
 
-  @media screen and (min-width: 1441px) {
-    font-size: calc(16px + (21.33 - 16) * ((100vw - 1440px) / (1920 - 1440)));
-  }
+  // @media screen and (min-width: 769px) and (max-width: 1440px) {
+  //   font-size: calc(8.54px + (16 - 8.54) * ((100vw - 769px) / (1440 - 769)));
+  // }
+
+  // @media screen and (min-width: 1441px) {
+  //   font-size: calc(16px + (21.33 - 16) * ((100vw - 1440px) / (1920 - 1440)));
+  // }
 }
