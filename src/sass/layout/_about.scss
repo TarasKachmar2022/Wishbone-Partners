@@ -1,0 +1,26 @@
+.about {
+  @include section();
+}
+
+.about__container {
+  display: flex;
+  justify-content: center;
+}
+
+.about__thumb {
+  display: flex;
+  gap: 133px;
+  max-width: 768px;
+}
+
+.about__title {
+  @extend %section-title;
+  @extend %section-title--small;
+  min-width: 134px;
+}
+
+.about__text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

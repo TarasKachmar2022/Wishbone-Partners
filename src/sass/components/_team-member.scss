@@ -1,0 +1,17 @@
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.team-member__title {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1;
+  color: var(--title-txt-cl);
+}
+.team-member__descr {
+  font-size: 14px;
+  line-height: 1;
+  color: var(--secondary-txt-cl);
+}
