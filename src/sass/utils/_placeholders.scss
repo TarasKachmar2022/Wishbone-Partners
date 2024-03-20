@@ -24,6 +24,8 @@
 }
 
 %section-title--large {
+  font-size: 39px;
+  line-height: 1.08;
 }
 
 %descr {
@@ -38,4 +40,14 @@
   // @media screen and (min-width: 1441px) {
   //   font-size: calc(16px + (21.33 - 16) * ((100vw - 1440px) / (1920 - 1440)));
   // }
+}
+
+%card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+%card-item {
+  flex-basis: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
 }
