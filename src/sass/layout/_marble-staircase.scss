@@ -1,0 +1,50 @@
+.marble-staircase {
+  @include section(266, 266);
+  background-color: var(--background-section-cl);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  // desktop screen
+  background-image: url('../images/marble-staircase/marble-staircase-bg-img_d.jpg');
+  background-image: -webkit-image-set(
+    url('../images/marble-staircase/marble-staircase-bg-img_d.webp') 1x
+  );
+  @include retinax2 {
+    background-image: url('../images/marble-staircase/marble-staircase-bg-img@2x_d.jpg');
+    background-image: -webkit-image-set(
+      url('../images/marble-staircase/marble-staircase-bg-img@2x_d.webp') 2x
+    );
+  }
+  @include retinax3 {
+    background-image: url('../images/marble-staircase/marble-staircase-bg-img@3x_d.jpg');
+    background-image: -webkit-image-set(
+      url('../images/marble-staircase/marble-staircase-bg-img@3x_d.webp') 3x
+    );
+  }
+  @include retinax4 {
+    background-image: url('../images/marble-staircase/marble-staircase-bg-img@4x_d.jpg');
+    background-image: -webkit-image-set(
+      url('../images/marble-staircase/marble-staircase-bg-img@4x_d.webp') 4x
+    );
+  }
+}
+
+.marble-staircase__wrap {
+  max-width: 285px;
+  margin-left: auto;
+  margin-right: -60px;
+}
+
+.marble-staircase__title {
+  @extend %uppertitle;
+  font-weight: 400;
+  color: var(--main-txt-cl);
+}
+
+.marble-staircase__descr {
+  @extend %descr;
+  color: var(--secondary-txt-cl);
+}

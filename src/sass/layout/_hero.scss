@@ -1,7 +1,11 @@
 .hero {
   background-color: var(--background-hero-cl);
+}
+
+.hero__container {
   background-position: right;
   background-repeat: no-repeat;
+  margin: 0 auto;
 
   // mobile screen
   background-image: url('../images/hero/hero.jpg');
@@ -19,7 +23,7 @@
     background-image: -webkit-image-set(url('../images/hero/hero@4x.webp') 4x);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1439px) {
     @include section(
       calc(73.16px + (137 - 73.16) * ((100vw - 768px) / (1440 - 768))),
       calc(62.48px + (117 - 62.48) * ((100vw - 768px) / (1440 - 768)))
@@ -28,6 +32,12 @@
     background-size: calc(
       384px + (720 - 384) * ((100vw - 768px) / (1440 - 768))
     );
+  }
+
+  @media screen and (min-width: 1440px) {
+    @include section(137, 117);
+    font-size: 16px;
+    background-size: 720px;
   }
 
   // @media screen and (min-width: 769px) and (max-width: 1440px) {
@@ -58,10 +68,14 @@
 .hero__uppertitle {
   @extend %uppertitle;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1439px) {
     margin-bottom: calc(
       10.68px + (20 - 10.68) * ((100vw - 768px) / (1440 - 768))
     );
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 20px;
   }
 
   // @media screen and (min-width: 769px) and (max-width: 1440px) {
@@ -80,13 +94,18 @@
 .hero__title {
   @extend %maintitle;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1439px) {
     max-width: calc(
       222.69px + (417 - 222.69) * ((100vw - 768px) / (1440 - 768))
     );
     margin-bottom: calc(
       9.61px + (24 - 9.61) * ((100vw - 768px) / (1440 - 768))
     );
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 417px;
+    margin-bottom: 24px;
   }
 
   // @media screen and (min-width: 769px) and (max-width: 1440px) {
@@ -109,13 +128,18 @@
 .hero__descr {
   @extend %descr;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1439px) {
     max-width: calc(
       271.82px + (509 - 271.82) * ((100vw - 768px) / (1440 - 768))
     );
     margin-bottom: calc(
       16.02px + (30 - 16.02) * ((100vw - 768px) / (1440 - 768))
     );
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 509px;
+    margin-bottom: 30px;
   }
 
   // @media screen and (min-width: 769px) and (max-width: 1440px) {

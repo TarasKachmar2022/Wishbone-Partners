@@ -1,17 +1,31 @@
 %uppertitle {
-  font-size: calc(7.48px + (14 - 7.48) * ((100vw - 769px) / (1440 - 769)));
   line-height: 1.43;
   letter-spacing: 0.06em;
   color: var(--secondary-txt-cl);
 
   text-transform: uppercase;
+
+  @media screen and (max-width: 1439px) {
+    font-size: calc(7.48px + (14 - 7.48) * ((100vw - 769px) / (1440 - 769)));
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 14px;
+  }
 }
 
 %maintitle {
   font-weight: 400;
-  font-size: calc(34.18px + (64 - 34.18) * ((100vw - 769px) / (1440 - 769)));
   line-height: 1.1;
   color: var(--title-txt-cl);
+
+  @media screen and (max-width: 1439px) {
+    font-size: calc(34.18px + (64 - 34.18) * ((100vw - 769px) / (1440 - 769)));
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 64px;
+  }
 }
 
 %section-title {
@@ -29,8 +43,12 @@
 }
 
 %descr {
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1439px) {
     font-size: calc(8.54px + (16 - 8.54) * ((100vw - 769px) / (1440 - 769)));
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
   }
 
   // @media screen and (min-width: 769px) and (max-width: 1440px) {

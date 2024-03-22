@@ -6,7 +6,7 @@
   border-radius: calc(6.94px + (13 - 6.94) * ((100vw - 769px) / (1440 - 769)));
   border: transparent;
 
-  @media screen and (min-width: 769px) and (max-width: 1440px) {
+  @media screen and (max-width: 1439px) {
     font-size: calc(8.54px + (16 - 8.54) * ((100vw - 768px) / (1440 - 768)));
     padding-top: calc(5.87px + (11 - 5.87) * ((100vw - 769px) / (1440 - 769)));
     padding-right: calc(
@@ -20,19 +20,41 @@
     );
   }
 
-  @media screen and (min-width: 1441px) {
-    font-size: calc(16px + (21.33 - 16) * ((100vw - 1440px) / (1920 - 1440)));
-    padding-top: calc(5.87px + (11 - 5.87) * ((100vw - 769px) / (1440 - 769)));
-    padding-right: calc(
-      10.68px + (20 - 10.68) * ((100vw - 769px) / (1440 - 769))
-    );
-    padding-bottom: calc(
-      5.87px + (11 - 5.87) * ((100vw - 769px) / (1440 - 769))
-    );
-    padding-left: calc(
-      10.68px + (20 - 10.68) * ((100vw - 769px) / (1440 - 769))
-    );
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+    padding-top: 11px;
+    padding-right: 20px;
+    padding-bottom: 11px;
+    padding-left: 20px;
   }
+
+  // @media screen and (min-width: 769px) and (max-width: 1440px) {
+  //   font-size: calc(8.54px + (16 - 8.54) * ((100vw - 768px) / (1440 - 768)));
+  //   padding-top: calc(5.87px + (11 - 5.87) * ((100vw - 769px) / (1440 - 769)));
+  //   padding-right: calc(
+  //     10.68px + (20 - 10.68) * ((100vw - 769px) / (1440 - 769))
+  //   );
+  //   padding-bottom: calc(
+  //     5.87px + (11 - 5.87) * ((100vw - 769px) / (1440 - 769))
+  //   );
+  //   padding-left: calc(
+  //     10.68px + (20 - 10.68) * ((100vw - 769px) / (1440 - 769))
+  //   );
+  // }
+
+  // @media screen and (min-width: 1441px) {
+  //   font-size: calc(16px + (21.33 - 16) * ((100vw - 1440px) / (1920 - 1440)));
+  //   padding-top: calc(5.87px + (11 - 5.87) * ((100vw - 769px) / (1440 - 769)));
+  //   padding-right: calc(
+  //     10.68px + (20 - 10.68) * ((100vw - 769px) / (1440 - 769))
+  //   );
+  //   padding-bottom: calc(
+  //     5.87px + (11 - 5.87) * ((100vw - 769px) / (1440 - 769))
+  //   );
+  //   padding-left: calc(
+  //     10.68px + (20 - 10.68) * ((100vw - 769px) / (1440 - 769))
+  //   );
+  // }
 
   &--transparent {
     color: var(--title-txt-cl);

@@ -5,9 +5,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 1440px;
-  max-height: 600px;
   margin: 0 auto;
-  position: relative;
 
   // desktop screen
   background-image: url('../images/reeding-house/reeding-house-bg-img_d.jpg');
@@ -35,9 +33,9 @@
 }
 
 .reeding-house__wrap {
-  position: absolute;
-  top: 50%;
-  right: 75px;
+  max-width: 285px;
+  margin-left: auto;
+  margin-right: -60px;
 }
 
 .reeding-house__title {
@@ -49,5 +47,4 @@
 .reeding-house__descr {
   @extend %descr;
   color: var(--secondary-txt-cl);
-  max-width: 285px;
 }
