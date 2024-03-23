@@ -40,7 +40,7 @@
 
 .reeding-house__title {
   @extend %uppertitle;
-  font-weight: 400;
+  @extend %section-title;
   color: var(--main-txt-cl);
 }
 
