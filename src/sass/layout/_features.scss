@@ -9,7 +9,6 @@
 }
 
 .features__title {
-  @extend %section-title;
   @extend %section-title--large;
   margin-bottom: 47px;
 }

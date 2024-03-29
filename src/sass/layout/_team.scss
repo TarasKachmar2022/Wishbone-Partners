@@ -1,0 +1,39 @@
+.team {
+  @include section();
+}
+
+.team__container {
+  display: flex;
+  gap: 37px;
+}
+
+.team-wrap {
+  flex-grow: 1;
+}
+
+.team__title {
+  @extend %section-title--small;
+  font-weight: 400;
+  margin-bottom: 14px;
+}
+
+.team__descr {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--secondary-txt-cl);
+  max-width: 375px;
+  margin-bottom: 30px;
+}
+
+.team__btn {
+  @extend .btn;
+  @extend .btn--transparent;
+}
+
+.team__list {
+  --indent: 140px;
+  --item: 2;
+  @extend %card-set;
+  row-gap: 58px;
+  max-width: 755px;
+}

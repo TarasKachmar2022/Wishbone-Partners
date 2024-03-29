@@ -14,7 +14,6 @@
 }
 
 .about__title {
-  @extend %section-title;
   @extend %section-title--small;
   min-width: 134px;
 }
