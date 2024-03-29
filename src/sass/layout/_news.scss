@@ -1,0 +1,31 @@
+.news {
+  @include section();
+  background-color: var(--background-section-cl);
+}
+
+.news__title {
+  @extend %section-title;
+  @extend %section-title--large;
+  margin-bottom: 15px;
+}
+
+.news__descr {
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--secondary-txt-cl);
+  max-width: 581px;
+  margin-bottom: 42px;
+}
+
+.news__list {
+  --indent: 15px;
+  @extend %card-set;
+  margin-bottom: 40px;
+}
+
+.news__btn {
+  @extend .btn;
+  @extend .btn--transparent;
+  display: block;
+  margin: 0 auto;
+}
