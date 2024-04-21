@@ -1,0 +1,13 @@
+.footer {
+  @include section(60, 60);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__descr,
+.footer__copyright {
+  font-size: 14px;
+}
