@@ -1,5 +1,6 @@
 .btn {
   font-size: calc(8.54px + (16 - 8.54) * ((100vw - 769px) / (1440 - 769)));
+  line-height: calc(0.8px + (1.5 - 0.8) * ((100vw - 769px) / (1440 - 769)));
   letter-spacing: 0.06em;
   color: var(--white-txt-cl);
   background-color: #000000;

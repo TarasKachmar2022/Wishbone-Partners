@@ -1,0 +1,26 @@
+.contact {
+  @include section();
+  background-color: #cec4bc;
+}
+
+.contact__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__uppertitle {
+  @extend %uppertitle;
+}
+
+.contact__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.05;
+  color: var(--title-txt-cl);
+  width: 576px;
+}
+
+.contact__btn {
+  @extend .btn;
+  @extend .btn--transparent;
+}
