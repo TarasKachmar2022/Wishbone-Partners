@@ -5,6 +5,7 @@
 
 .contact__container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -23,4 +24,8 @@
 .contact__btn {
   @extend .btn;
   @extend .btn--transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
 }
