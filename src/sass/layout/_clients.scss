@@ -1,17 +1,35 @@
 .clients {
-  @include section();
   background-color: var(--background-clients-cl);
   color: var(--white-txt-cl);
+
+  @media screen and (min-width: 768px) {
+    @include section(
+      calc(50px + (100 - 50) * ((100vw - 768px) / (1440 - 768))),
+      calc(50px + (100 - 50) * ((100vw - 768px) / (1440 - 768)))
+    );
+  }
+
+  @media screen and (min-width: 1440px) {
+    @include section();
+  }
 }
 
 .clients__container {
   display: flex;
   align-items: center;
-  gap: 132px;
+  gap: calc(66px + (132 - 66) * ((100vw - 768px) / (1440 - 768)));
+
+  @media screen and (min-width: 1440px) {
+    gap: 132px;
+  }
 }
 
 .clients__wrap {
-  max-width: 480px;
+  max-width: calc(285px + (470 - 285) * ((100vw - 768px) / (1440 - 768)));
+
+  @media screen and (min-width: 1440px) {
+    max-width: 470px;
+  }
 }
 
 .clients__uppertitle {
@@ -21,7 +39,7 @@
 }
 
 .clients__title {
-  font-size: 32px;
+  @extend %section-title--small;
   margin-bottom: 14px;
 }
 
@@ -32,12 +50,19 @@
 
 .clients__list {
   --item: 2;
-  --indent: 96px;
+  --indent: calc(48px + (96 - 48) * ((100vw - 768px) / (1440 - 768)));
   @extend %card-set;
   align-items: center;
-  padding-right: 40px;
-  padding-left: 40px;
-  margin-right: 124px;
+  padding-right: calc(20px + (40 - 20) * ((100vw - 768px) / (1440 - 768)));
+  padding-left: calc(20px + (40 - 20) * ((100vw - 768px) / (1440 - 768)));
+  margin-right: calc(0px + (124 - 0) * ((100vw - 768px) / (1440 - 768)));
+
+  @media screen and (min-width: 1440px) {
+    --indent: 96px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-right: 124px;
+  }
 }
 
 .clients__item {
@@ -46,4 +71,9 @@
 
 .clients__icon {
   fill: currentColor;
+  width: calc(104px + (128 - 104) * ((100vw - 768px) / (1440 - 768)));
+
+  @media screen and (min-width: 1440px) {
+    width: 128px;
+  }
 }

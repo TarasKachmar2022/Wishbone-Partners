@@ -1,6 +1,16 @@
 .contact {
-  @include section();
   background-color: #cec4bc;
+
+  @media screen and (min-width: 768px) {
+    @include section(
+      calc(50px + (100 - 50) * ((100vw - 768px) / (1440 - 768))),
+      calc(50px + (100 - 50) * ((100vw - 768px) / (1440 - 768)))
+    );
+  }
+
+  @media screen and (min-width: 1440px) {
+    @include section();
+  }
 }
 
 .contact__container {
@@ -15,10 +25,18 @@
 
 .contact__title {
   font-weight: 400;
-  font-size: 40px;
   line-height: 1.05;
   color: var(--title-txt-cl);
-  width: 576px;
+
+  @media screen and (min-width: 768px) {
+    font-size: calc(32px + (40 - 32) * ((100vw - 768px) / (1440 - 768)));
+    width: 500px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 40px;
+    width: 576px;
+  }
 }
 
 .contact__btn {

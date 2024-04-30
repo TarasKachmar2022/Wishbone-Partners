@@ -2,16 +2,39 @@
   display: flex;
   align-items: center;
   gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: calc(225px + (250 - 225) * ((100vw - 768px) / (1440 - 768)));
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 250px;
+  }
 }
 
 .team-member__title {
   font-weight: 400;
-  font-size: 17px;
   line-height: 1;
   color: var(--title-txt-cl);
+
+  @media screen and (min-width: 768px) {
+    font-size: calc(15px + (17 - 15) * ((100vw - 768px) / (1440 - 768)));
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 17px;
+  }
 }
+
 .team-member__descr {
-  font-size: 14px;
   line-height: 1;
   color: var(--secondary-txt-cl);
+
+  @media screen and (min-width: 768px) {
+    font-size: calc(12px + (14 - 12) * ((100vw - 768px) / (1440 - 768)));
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 14px;
+  }
 }

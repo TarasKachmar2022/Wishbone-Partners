@@ -1,5 +1,15 @@
 .card {
+  @extend %card-item;
   position: relative;
+
+  @media screen and (max-width: 767px) {
+    --iten: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    --item: 3;
+    max-width: 379px;
+  }
 }
 
 .card__text-thumb {

@@ -1,6 +1,16 @@
 .news {
-  @include section();
   background-color: var(--background-section-cl);
+
+  @media screen and (min-width: 768px) {
+    @include section(
+      calc(50px + (100 - 50) * ((100vw - 768px) / (1440 - 768))),
+      calc(50px + (100 - 50) * ((100vw - 768px) / (1440 - 768)))
+    );
+  }
+
+  @media screen and (min-width: 1440px) {
+    @include section();
+  }
 }
 
 .news__title {
@@ -9,17 +19,35 @@
 }
 
 .news__descr {
-  font-size: 24px;
   line-height: 1.25;
   color: var(--secondary-txt-cl);
-  max-width: 581px;
-  margin-bottom: 42px;
+
+  @media screen and (min-width: 768px) {
+    font-size: calc(20px + (24 - 20) * ((100vw - 768px) / (1440 - 768)));
+    max-width: calc(500px + (581 - 500) * ((100vw - 768px) / (1440 - 768)));
+    margin-bottom: calc(30px + (42 - 30) * ((100vw - 768px) / (1440 - 768)));
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 24px;
+    max-width: 581px;
+    margin-bottom: 42px;
+  }
 }
 
 .news__list {
   --indent: 15px;
   @extend %card-set;
-  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: calc(30px + (40 - 30) * ((100vw - 768px) / (1440 - 768)));
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 40px;
+  }
 }
 
 .news__btn {

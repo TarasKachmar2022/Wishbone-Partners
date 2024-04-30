@@ -1,14 +1,18 @@
 .container {
   margin-right: auto;
   margin-left: auto;
+  // padding-right: 15px;
+  // padding-left: 15px;
 
-  @media screen and (max-width: 1439px) {
-    padding-right: calc(
-      72.63px + (136 - 72.63) * ((100vw - 769px) / (1440 - 769))
-    );
-    padding-left: calc(
-      72.63px + (136 - 72.63) * ((100vw - 769px) / (1440 - 769))
-    );
+  // @media screen and (max-width: 767px) {
+  //   padding-right: calc(15px + (60 - 15) * ((100vw - 769px) / (1440 - 769)));
+  //   padding-left: calc(15px + (60 - 15) * ((100vw - 769px) / (1440 - 769)));
+  //   // max-width: calc(480px + (768 - 480) * ((100vw - 480px) / (768 - 480)));
+  // }
+
+  @media screen and (min-width: 768px) {
+    padding-right: calc(60px + (136 - 60) * ((100vw - 769px) / (1440 - 769)));
+    padding-left: calc(60px + (136 - 60) * ((100vw - 769px) / (1440 - 769)));
     max-width: calc(769px + (1440 - 769) * ((100vw - 769px) / (1440 - 769)));
   }
 
@@ -20,10 +24,10 @@
 
   // @media screen and (min-width: 769px) and (max-width: 1440px) {
   //   padding-right: calc(
-  //     72.63px + (136 - 72.63) * ((100vw - 769px) / (1440 - 769))
+  //     50px + (136 - 50) * ((100vw - 769px) / (1440 - 769))
   //   );
   //   padding-left: calc(
-  //     72.63px + (136 - 72.63) * ((100vw - 769px) / (1440 - 769))
+  //     50px + (136 - 50) * ((100vw - 769px) / (1440 - 769))
   //   );
   //   max-width: 1440px;
   // }

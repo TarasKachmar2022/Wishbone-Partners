@@ -1,5 +1,14 @@
 .footer {
-  @include section(60, 60);
+  @media screen and (min-width: 768px) {
+    @include section(
+      calc(30px + (60 - 30) * ((100vw - 768px) / (1440 - 768))),
+      calc(30px + (60 - 30) * ((100vw - 768px) / (1440 - 768)))
+    );
+  }
+
+  @media screen and (min-width: 1440px) {
+    @include section(60, 60);
+  }
 }
 
 .footer__container {
@@ -9,5 +18,11 @@
 
 .footer__descr,
 .footer__copyright {
-  font-size: 14px;
+  @media screen and (min-width: 768px) {
+    font-size: calc(12px + (14 - 12) * ((100vw - 768px) / (1440 - 768)));
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 14px;
+  }
 }

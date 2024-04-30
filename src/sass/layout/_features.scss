@@ -1,16 +1,40 @@
 .features {
-  @include section();
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    @include section(
+      calc(50px + (100 - 50) * ((100vw - 768px) / (1440 - 768))),
+      calc(50px + (100 - 50) * ((100vw - 768px) / (1440 - 768)))
+    );
+  }
+
+  @media screen and (min-width: 1440px) {
+    @include section();
+  }
 }
 
 .features__uppertitle {
   @extend %uppertitle;
-  margin-bottom: 13px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: calc(10px + (13 - 10) * ((100vw - 768px) / (1440 - 768)));
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 13px;
+  }
 }
 
 .features__title {
   @extend %section-title--large;
-  margin-bottom: 47px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: calc(30px + (47 - 30) * ((100vw - 768px) / (1440 - 768)));
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 47px;
+  }
 }
 
 .features__list {
@@ -21,9 +45,17 @@
 
 .features__item {
   @extend %card-item;
-  padding-right: 42px;
-  padding-left: 42px;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    padding-right: calc(10px + (42 - 10) * ((100vw - 768px) / (1440 - 768)));
+    padding-left: calc(10px + (42 - 10) * ((100vw - 768px) / (1440 - 768)));
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-right: 42px;
+    padding-left: 42px;
+  }
 }
 
 .features__icon {
@@ -33,13 +65,27 @@
 
 .features__subtitle {
   font-weight: 400;
-  font-size: 18px;
   line-height: 1.44;
   margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    font-size: calc(16px + (18 - 16) * ((100vw - 768px) / (1440 - 768)));
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 18px;
+  }
 }
 
 .features__descr {
-  font-size: 15px;
   line-height: 1.6;
   color: var(--secondary-txt-cl);
+
+  @media screen and (min-width: 768px) {
+    font-size: calc(12px + (15 - 12) * ((100vw - 768px) / (1440 - 768)));
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 15px;
+  }
 }

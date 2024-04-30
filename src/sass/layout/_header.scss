@@ -20,13 +20,15 @@
 .header__wrap {
   display: flex;
   align-items: center;
-  width: 100%;
+  // width: 100%;
 }
 
 .header__btn {
   @media screen and (max-width: 1439px) {
     font-size: calc(14px + (16 - 14) * ((100vw - 768px) / (1440 - 768)));
-    margin-left: calc(7.11px + (32 - 7.11) * ((100vw - 768px) / (1440 - 768)));
+    margin-left: calc(
+      17.11px + (32 - 17.11) * ((100vw - 768px) / (1440 - 768))
+    );
   }
 
   @media screen and (min-width: 1440px) {

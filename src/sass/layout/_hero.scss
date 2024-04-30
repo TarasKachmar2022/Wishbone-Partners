@@ -1,6 +1,10 @@
 .hero {
   background-color: var(--background-hero-cl);
-  margin-top: 80px;
+  margin-top: calc(52px + (80 - 52) * ((100vw - 768px) / (1440 - 768)));
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 80px;
+  }
 }
 
 .hero__container {
@@ -26,8 +30,8 @@
 
   @media screen and (max-width: 1439px) {
     @include section(
-      calc(73.16px + (137 - 73.16) * ((100vw - 768px) / (1440 - 768))),
-      calc(62.48px + (117 - 62.48) * ((100vw - 768px) / (1440 - 768)))
+      calc(30px + (137 - 30) * ((100vw - 768px) / (1440 - 768))),
+      calc(30px + (117 - 30) * ((100vw - 768px) / (1440 - 768)))
     );
     font-size: calc(8.54px + (16 - 8.54) * ((100vw - 768px) / (1440 - 768)));
     background-size: calc(
@@ -70,9 +74,7 @@
   @extend %uppertitle;
 
   @media screen and (max-width: 1439px) {
-    margin-bottom: calc(
-      10.68px + (20 - 10.68) * ((100vw - 768px) / (1440 - 768))
-    );
+    margin-bottom: calc(10px + (20 - 10) * ((100vw - 768px) / (1440 - 768)));
   }
 
   @media screen and (min-width: 1440px) {
@@ -96,12 +98,8 @@
   @extend %maintitle;
 
   @media screen and (max-width: 1439px) {
-    max-width: calc(
-      222.69px + (417 - 222.69) * ((100vw - 768px) / (1440 - 768))
-    );
-    margin-bottom: calc(
-      9.61px + (24 - 9.61) * ((100vw - 768px) / (1440 - 768))
-    );
+    max-width: calc(272px + (417 - 272) * ((100vw - 768px) / (1440 - 768)));
+    margin-bottom: calc(12px + (24 - 12) * ((100vw - 768px) / (1440 - 768)));
   }
 
   @media screen and (min-width: 1440px) {
@@ -130,12 +128,8 @@
   @extend %descr;
 
   @media screen and (max-width: 1439px) {
-    max-width: calc(
-      271.82px + (509 - 271.82) * ((100vw - 768px) / (1440 - 768))
-    );
-    margin-bottom: calc(
-      16.02px + (30 - 16.02) * ((100vw - 768px) / (1440 - 768))
-    );
+    max-width: calc(300px + (509 - 300) * ((100vw - 768px) / (1440 - 768)));
+    margin-bottom: calc(12px + (30 - 12) * ((100vw - 768px) / (1440 - 768)));
   }
 
   @media screen and (min-width: 1440px) {
