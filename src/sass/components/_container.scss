@@ -10,10 +10,16 @@
   //   // max-width: calc(480px + (768 - 480) * ((100vw - 480px) / (768 - 480)));
   // }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1439px) {
     padding-right: calc(60px + (136 - 60) * ((100vw - 769px) / (1440 - 769)));
     padding-left: calc(60px + (136 - 60) * ((100vw - 769px) / (1440 - 769)));
     max-width: calc(769px + (1440 - 769) * ((100vw - 769px) / (1440 - 769)));
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-right: calc(15px + (60 - 15) * ((100vw - 767px) / (1440 - 769)));
+    padding-left: calc(15px + (60 - 15) * ((100vw - 767px) / (1440 - 769)));
+    // max-width: calc(320px + (767 - 320) * ((100vw - 320px) / (1440 - 769)));
   }
 
   @media screen and (min-width: 1440px) {

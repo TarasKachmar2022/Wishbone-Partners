@@ -23,8 +23,33 @@
   // width: 100%;
 }
 
+.header__thumb {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    background-color: #fff;
+    width: 100%;
+    z-index: 9;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.header__menu {
+  border: transparent;
+  color: var(--icon-menu-cl);
+  color: #000;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .header__btn {
-  @media screen and (max-width: 1439px) {
+  @media screen and (min-width: 768px) {
     font-size: calc(14px + (16 - 14) * ((100vw - 768px) / (1440 - 768)));
     margin-left: calc(
       17.11px + (32 - 17.11) * ((100vw - 768px) / (1440 - 768))

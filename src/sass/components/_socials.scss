@@ -1,7 +1,14 @@
 .socials {
   display: flex;
   align-items: end;
-  gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    gap: calc(16px + (20 - 16) * ((100vw - 768px) / (1440 - 768)));
+  }
+
+  @media screen and (min-width: 1440px) {
+    gap: 20px;
+  }
 }
 
 .socials__icon {
